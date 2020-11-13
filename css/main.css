@@ -1,31 +1,182 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282d31;
+}
+
+h1 {
+  color: #cacaca;
+  font-family: Helvetica;
+  font-weight: 400;
+}
+
+p {
+  color: #6b6b6b;
+  font-family: Helvetica;
+  margin-top: 14px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.osynlig {
+  color: yellow;
+}
+
+.link-resume {
+  color: white;
+  text-decoration: none;
+  font-family: Helvetica;
+}
+.link-resume:hover {
+  color: paleturquoise;
+  text-decoration: underline;
+  font-family: Helvetica;
+}
+
+.link-github {
+  color: white;
+  text-decoration: none;
+  font-family: Helvetica;
+}
+.link-github:hover {
+  color: paleturquoise;
+  text-decoration: underline;
+  font-family: Helvetica;
+}
+.link-linkedin {
+  color: white;
+  text-decoration: none;
+  font-family: Helvetica;
+}
+.link-linkedin:hover {
+  color: paleturquoise;
+  text-decoration: underline;
+  font-family: Helvetica;
+}
+
+.welcome {
+  text-align: center;
+  padding-top: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.nav {
+  text-align: center;
+  padding-top: 20px;
+  margin: auto;
+  color: white;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  justify-content: center;
+}
+
+.img-with-text {
+  padding-top: 30px;
+  margin: 10px;
+  flex: 0 1 calc(20% - 2px);
+  text-align: center;
+}
+.container img:hover {
+  opacity: 0.3;
+}
+
+.img-with-text p {
+  max-width: 100%;
+}
+
+a {
+  outline: none;
+}
+
+.proj-padding {
+  padding-bottom: 25px;
+  font-size: 14px;
+}
+
+.navbar-container {
+  text-align: center;
+  padding: 10px;
+  font-size: 0;
+  font-family: Helvetica;
+}
+
+.navbar-container ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-container ul li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.navbar-container ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+  height: 3px;
+  background-color: transparent;
+  width: 0%;
+  transition: width 0.2s, background-color 0.5s;
+  margin: 0 auto;
+}
+
+.navbar-container ul li:hover .underline {
+  background-color: white;
+  width: 100%;
+}
+
+.navbar-container ul li:hover a {
+}
+
+.navbar-container ul li:active a {
+  transition: none;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.navbar-container ul li:active .underline {
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.76);
+}
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -50,12 +201,6 @@ hr {
   padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
 audio,
 canvas,
 iframe,
@@ -65,49 +210,20 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
   resize: vertical;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
 
 .hidden,
 [hidden] {
   display: none !important;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
 
 .sr-only {
   border: 0;
@@ -122,12 +238,6 @@ textarea {
   /* 1 */
 }
 
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -139,41 +249,19 @@ textarea {
   width: auto;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
   visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
 .clearfix::before,
 .clearfix::after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 
 .clearfix::after {
   clear: both;
 }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -185,12 +273,6 @@ textarea {
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
 
 @media print {
   *,
@@ -209,20 +291,16 @@ textarea {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  a[href^='#']::after,
+  a[href^='javascript:']::after {
+    content: '';
   }
 
   pre {
@@ -235,10 +313,6 @@ textarea {
     page-break-inside: avoid;
   }
 
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
   thead {
     display: table-header-group;
   }
@@ -260,4 +334,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
