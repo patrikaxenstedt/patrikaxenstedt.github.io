@@ -1,7 +1,8 @@
 html {
-  color: #222;
-  font-size: 1em;
+  color: #5b5b5b;
+  font-size: 0.7em;
   line-height: 1.4;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
 }
 
 * {
@@ -10,12 +11,8 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #282d31;
-}
-
 h1 {
-  color: #cacaca;
+  color: #a1a1a1;
   font-family: Helvetica;
   font-weight: 400;
 }
@@ -145,7 +142,7 @@ a {
 }
 
 .navbar-container ul li a {
-  color: #ffffff;
+  color: rgb(151, 151, 151);
   text-decoration: none;
   display: inline-block;
   padding: 10px;
@@ -161,7 +158,7 @@ a {
 }
 
 .navbar-container ul li:hover .underline {
-  background-color: white;
+  background-color: greenyellow;
   width: 100%;
 }
 
