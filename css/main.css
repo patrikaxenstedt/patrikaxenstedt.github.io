@@ -54,6 +54,9 @@ h4 {
 p {
   font-size: 12px;
 }
+.p-width {
+  max-width: 150px;
+}
 
 a {
   text-decoration: none;
