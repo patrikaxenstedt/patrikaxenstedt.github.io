@@ -185,7 +185,7 @@ export default class Home {
   }
 
   heroTextAnimation() {
-    gsap.to(".hero__title__dash.desktop", {
+/*     gsap.to(".hero__title__dash.desktop", {
       scrollTrigger: {
         trigger: ".hero__title",
         scroller: "[data-scroll-container]",
@@ -195,7 +195,7 @@ export default class Home {
       },
       scaleX: 4,
       ease: "none",
-    });
+    }); */
   }
 }
 

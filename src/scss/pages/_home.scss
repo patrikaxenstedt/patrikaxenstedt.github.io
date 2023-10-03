@@ -497,8 +497,10 @@
     .marquee {
       text-transform: uppercase;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
 
-      &__wrap {
+       &__wrap {
         &:hover {
           .marquee__inner {
             animation-play-state: paused;
@@ -514,7 +516,7 @@
             }
           }
         }
-      }
+      } 
 
       &__inner {
         height: 100%;
@@ -522,7 +524,7 @@
         align-items: center;
         display: flex;
         position: relative;
-        animation: marquee 25s linear infinite;
+        /* animation: marquee 25s linear infinite; */
         will-change: transform;
         padding-top: 2.4rem;
         padding-bottom: 1rem;
