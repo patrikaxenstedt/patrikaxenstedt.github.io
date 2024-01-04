@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Patrik Axenstedt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>hej</h1>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" href=mailto:“patrik.axenstedt@gmail.com” class="animated fadeIn" style="animation-delay:2.2s;">get in touch</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <p>Hey, I'm Patrik Axenstedt</p>
+        <h1>a Frontend Developer</h1>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">get in touch</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://www.linkedin.com/in/patrikaxenstedt/" target="_blank" class="social"><i class="fab fa-linkedin"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:3.4s;"><a href="https://github.com/patrikaxenstedt" target="_blank" class="social"><i class="fab fa-github"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works.</h1>
+        <section>
+            <h2>FRONTEND DEVELOPER | VOYADO <br />
+                (aug 2022 - current)</h2>
+<!--             <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> -->
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Aurelia</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Typescript/Javascript</div>
+            </div>
+            <button class="btn_one"><a href="https://voyado.com/" target="_blank">Website</a></button>
+            <!-- <button class="btn_two">button 2</button> -->
+        </section>
+        <section>
+            <h2>FRONTEND DEVELOEPR | PARKS & RESORTS SCANDINAVIA AB <br />
+                (feb 2022 - may 2022)</h2>
+<!--             <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> -->
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Gatsby.js</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Contentful headless CMS</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Typescript/Javascript</div>
+            </div>
+            <button class="btn_one"><a href="https://parksandresorts.com/" target="_blank">Website</a></button>
+<!--             <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button> -->
+        </section>
+        <section>
+            <h2>EMAIL TEMPLATE DEVELOPER | VOYADO <br />
+                (aug 2021 - feb 2022)</h2>
+<!--             <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> -->
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Inhouse framework</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+            </div>
+            <button class="btn_one"><a href="https://voyado.com/" target="_blank">Website</a></button>
+<!--             <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button> -->
+        </section>
+        <section>
+            <h2>FRONTEND DEVELOPER INTERN | OSYNLIG <br />
+                (oct 2020 - apr 2021)</h2>
+<!--             <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> -->
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Gatsby.js</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Next.js</div>
+                <div><i class="fas fa-circle"></i>&nbsp;React</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Wordpress gutenberg</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Typescript/Javascript</div>
+            </div>
+            <button class="btn_one"><a href="https://osynlig.se/" target="_blank">Website</a></button>
+<!--             <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button> -->
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <!-- <h2>Patrik Axenstedt</h2> -->
+                <p>
+                    Frontend Developer based in Stockholm. I like coding frontend, design, UX, climbing, hiking and just started playing discgolf.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </section>
+<!--             <section>
+                <h2>skills</h2>
+                <p>
+                    das
+                </p>
+            </section> -->
+        </div>
+        <!--   <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form action="mailto:patrik.axenstedt@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div> -->
+   <!--      <div id="footer">
+            asd</a>
+        </div> -->
+    <script src="index.js" type="text/javascript"></script>
+    <!-- <script src="particles.js"></script> -->
+    <!-- <script src="app.js"></script> -->
 </body>
 </html>
