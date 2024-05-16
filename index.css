@@ -8,9 +8,12 @@ body {
     background-size:cover;
     width:100vw;
     height:100vh; */
-    background: #272727;
+/*     background: #272727; */
+    background: #FBFBF2;
     overflow:hidden;
     font-family: 'League Spartan', sans-serif;
+
+
 }
 
 #box {
@@ -26,10 +29,10 @@ body {
     display:inline-block;
 }
 .box1 {
-    background: #FFFF00;
+    background: #FBFBF2;
 }
 .box2 {
-    background: #FFFF00;
+    background: #FBFBF2;
     margin-left:-5px;
 }
 #menu {
@@ -41,7 +44,7 @@ body {
 #menu a {
     margin:0px 6%;
     font-size:19px;
-    color:#fff;
+    color:#A6A2A2;
 }
 
 #middle {
@@ -54,15 +57,27 @@ body {
     top:0;
     text-align:center;
     z-index:1;
-    color:#ffffff;
+    color:#000000;
     padding-bottom:10vh;
 }
 #middle h1 {
-    color: #FFFF00;
+    color: #847577;
     font-size:70px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
+
+#middle h2 {
+color: #A6A2A2;
+}
+
+p {
+    color: #FBFBF2;
+    font-size: 18px !important;
+}
+
 #about {
-    width:10vw;
+/*     width:10vw;
     height:10vw;
     text-align:center;
     font-size:25px;
@@ -77,10 +92,25 @@ body {
     justify-content:center;
     z-index:4;
     transition:0.4s ease-in-out;
-    border-radius:0px 0px 100px 100px;
+    border-radius:0px 0px 100px 100px; */
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    background:transparent;
+    color:#A6A2A2;
+    position:fixed;
+    bottom:0;
+    left:25vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:100px 100px 0px 0px;
 }
 #work {
-    width:10vw;
+/*     width:10vw;
     height:10vw;
     text-align:center;
     font-size:25px;
@@ -95,7 +125,22 @@ body {
     justify-content:center;
     z-index:4;
     transition:0.4s ease-in-out;
-    border-radius:0px 0px 100px 100px;
+    border-radius:0px 0px 100px 100px; */
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    background:transparent;
+    color: #A6A2A2;
+    position:fixed;
+    bottom:0;
+    left:65vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:100px 100px 0px 0px;
 }
 #contact {
     width:10vw;
@@ -103,7 +148,7 @@ body {
     text-align:center;
     font-size:25px;
     background:transparent;
-    color:#ffffff;
+    color:#A6A2A2;
     position:fixed;
     bottom:0;
     left:45vw;
@@ -115,19 +160,21 @@ body {
     border-radius:100px 100px 0px 0px;
 }
 #about:hover {
-    background:#FFFF00;
-    cursor:pointer;
-    color: #000;
+    background: #EF626C;
+    cursor: pointer;
+    color: #ffffff;
 }
 #work:hover {
-    background: #FFFF00;
+    background: #EF626C;
     cursor:pointer;
-    color: #000;
+    color: #ffffff;
+
+
 }
 #contact:hover {
-    background: #FFFF00;
+    background: #EF626C;
     cursor:pointer;
-    color: #000;
+    color: #ffffff;
 }
 #middle table {
     width:30%;
@@ -146,13 +193,53 @@ body {
 }
 .social:hover { 
     cursor: pointer;
-    color: #FFFF00;
+    color: #EF626C;
 }
+
+.aboutme {
+    max-width: 1072px;
+}
+
+.img_profile {
+/* height: 160px;
+width: 160px; */
+height: 260px;
+width: 260px;
+border-radius: 50%;
+margin: 0 auto;
+margin-top: 40px;
+}
+
+.proj_img {
+width: 100%;
+}
+.proj_img_small {
+ width: 49%;
+
+}
+
+.img_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px 33px;
+    width: 100%;
+
+}
+img:hover {
+    cursor: default;
+}
+
 .container {
     width:90vw;
     height:90vh;
+/*    margin-left: 88vh;
+    border-left: 2px solid #A6A2A2 ;  */
+/*     box-shadow: -2px 0px 10px 1px #A6A2A2; */
     padding:5vh 5vw;
-    background: #FFFF00;
+/*     background: #FBFBF2; */
+    background: #EF626C;
     color:#000000;
     z-index:9;
     position:fixed;
@@ -165,8 +252,15 @@ body {
     margin:20px 0px;
     transition:0.4s ease-in-out;
 }
+.spacer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.fas {
+    cursor: pointer;
+}
 .container div:hover {
-    cursor:pointer;
+  
 }
 .container section {
     margin:8vh 0px;
@@ -174,9 +268,11 @@ body {
 #used div{
     font-size:14px !important;
     display:inline-block;
+    background: #e92f48;
+    color: #FBFBF2;
     padding:8px 10px;
-    border:2px solid #000000;
-    margin:0px 10px;
+  /*   border:2px solid #FBFBF2; */
+    margin: 4px 10px;
     border-radius:50px;
 }
 #used:hover {
@@ -186,34 +282,40 @@ body {
     cursor:text;
 }
 .container h1 {
-    font-size:60px;
-    text-decoration:underline;
+    color: #FBFBF2;
+    font-size: 82px;
+    text-decoration: underline;
+}
+.container h2 {
+    color: #FBFBF2;
 }
 .container p {
-    font-size:21px;
+    font-size: 21px;
 }
 .btn_one {
     font-size:18px;
     font-family: 'Josefin Sans', sans-serif;
-    color:#000000;
-    background: #FFFF00;
-    border:3px solid #000000;
-    padding:8px 40px;
-    border-radius:80px;
-    font-weight:bold;
-    margin:2vh 10px;
-    transition:0.4s ease-in-out;
+    color:#FBFBF2;
+    background: #EF626C;
+    border: 2px solid #fff;
+    padding: 8px 40px;
+    border-radius: 80px;
+    font-weight: bold;
+    margin: 2vh 10px;
+    transition: 0.4s ease-in-out;
 }
 .btn_one:hover {
     cursor:pointer;
     color: #fff;
+    box-shadow: 10px 10px #f5a6ab;
     
 }
 
 a {
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
 }
+
 
 .btn_two {
     font-size:18px;
@@ -272,6 +374,10 @@ a {
 ::placeholder {
     color:#fff;
 }
+
+.fa-angle-right, .fa-angle-left {
+    color: #fff;
+}
 /*  #footer {
     color:#fff;
     width:92vw;
@@ -287,21 +393,21 @@ a {
 }  */
 
 ::-webkit-scrollbar {
-    width:5px;
+    width:8px;
     height:5px;
 }
 ::-webkit-scrollbar-track {
     background: #fff; 
 }
 ::-webkit-scrollbar-thumb {
-    background: #FFFF00;
+    background: #EF626C;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #FFFF00;
+    background: #EF626C;
 }
 ::selection {
 	color: #fff;
-	background: #FFFF00;
+	background: #EF626C;
 }
 
 @media (max-width: 800px){ 
@@ -317,6 +423,9 @@ a {
 /*     #footer {
         text-align:center;
     } */
+    .proj_img_small {
+        width: 100%;
+       }
     #middle {
         width:90vw;
         padding:0px 5vw;
@@ -343,3 +452,4 @@ a {
         width:100%;
     }
 }
+
