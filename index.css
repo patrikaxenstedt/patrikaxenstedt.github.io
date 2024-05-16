@@ -429,9 +429,14 @@ a {
     #middle {
         width:90vw;
         padding:0px 5vw;
+        height: 100vh;
     }
+
+
+
     #middle table {
         width:80%;
+        margin: 0vh auto;
     }
     .container form input {
         width:90%;
