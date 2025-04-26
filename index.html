@@ -3,243 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Patrik Axenstedt</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <title>Patrik Axenstedt | Portfolio</title>
+    <meta name="description" content="Portfolio of Patrik Axenstedt, UX-Designer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Experience</a>
-    <a id="contact" href=mailto:“patrik.axenstedt@gmail.com” class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
-    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
-        <img class="img_profile" src="profile.png" alt="">
-        <h2>Hi, I'm Patrik Axenstedt</h2>
-        <h1>Frontend Developer</h1>
-        <h1>UX designer</h1>
-        
-        
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">patrik axenstedt</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-        <div id="menu">
-            <a onclick="showabout()">About</a>
-            <a onclick="showcontact()">Contact</a>
-            <a onclick="showwork()">Experience</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Creating digital <span class="accent">experiences</span><br>that matter</h1>
+                <p>Hey, I'm Patrik — a UX designer passionate about crafting intuitive and beautiful digital experiences that solve real problems.</p>
+               <!--  <a href="#projects" class="button">View My Work</a> -->
+               <a href="https://www.linkedin.com/in/patrikaxenstedt/" target="_blank"><img src="./projects/linkedin.png" alt="LinkedIn Logo" class="linkedin-logo"></a>
+            </div>
         </div>
-        <table>
-                <tr>
-                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://www.linkedin.com/in/patrikaxenstedt/" target="_blank" class="social"><i class="fab fa-linkedin"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:3.4s;"><a href="https://github.com/patrikaxenstedt" target="_blank" class="social"><i class="fab fa-github"></i></a></td>
-                </tr>
-        </table>
-    </div>
-    <div id="work_container" class="container">
-        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <h1>experience</h1>
-                <section>
-            <h2>UX-DESIGNER/TEMPLATE DEVELOPER | VOYADO <br />
-                (nov 2024 - current)</h2>
-<!--             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p> -->
-            <div id="used">
-                <div>Figma</div>
-                <div>Photoshop</div>
-                <div>inDesign</div>
-                <div>MJML</div>
-                <div>HTML5</div>
-                <div>CSS</div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="">
+                    <img src="./projects/profile.png" alt="Patrik Axenstedt Profile Picture" class="about-photo">
+                </div>
+                <div class="about-content">
+                  <p>EDUCATION<br>
+                    Fullstack Web Developer | Chas Academy (2019-2021)<br>
+                    Graphic Design and Communication | Idévärlden (2010-2012)</p>
+                    <br><p>With over 2 years of experience in UX design, I strive to create user-centered digital solutions that combine design with functionality. My approach focuses on understanding user needs and translating them into user-friendly design solutions.</p>
+                    
+                </div>
             </div>
-           <!--  <button class="btn_one"><a href="https://voyado.com/" target="_blank">Website</a></button> -->
-            <!-- <button class="btn_two">button 2</button> -->
-        </section>
-        <section>
-            <h2>FRONTEND DEVELOPER | VOYADO <br />
-                (aug 2022 - mars 2024)</h2>
-<!--             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p> -->
-            <div id="used">
-                <div>Aurelia</div>
-                <div>HTML5</div>
-                <div>CSS</div>
-                <div>TypeScript</div>
-                <div>JavaScript</div>
-            </div>
-           <!--  <button class="btn_one"><a href="https://voyado.com/" target="_blank">Website</a></button> -->
-            <!-- <button class="btn_two">button 2</button> -->
-        </section>
-        <section>
-            <h2>FRONTEND DEVELOEPR/UX-DESIGNER | PARKS & RESORTS SCANDINAVIA AB <br />
-                (feb 2022 - may 2022)</h2>
-<!--             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p> -->
-            <div id="used">
-                <div>Figma</div>
-                <div>Gatsby.js</div>
-                <div>HTML5</div>
-                <div>CSS</div>
-                <div>TypeScript</div>
-                <div>JavaScript</div>
-                <div>Contentful headless CMS</div>
-                
-            </div>
-           <!--  <button class="btn_one"><a href="https://parksandresorts.com/" target="_blank">Website</a></button> -->
-<!--             <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button> -->
-        </section>
-        <section>
-            <h2>UX-DESIGNER/TEMPLATE DEVELOPER | VOYADO <br />
-                (aug 2021 - feb 2022)</h2>
-<!--             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p> -->
-            <div id="used">
-                <div>Figma</div>
-                <div>inDesign</div>
-                <div>Photoshop</div>
-                <div>HTML5</div>
-                <div>CSS</div>
-                <div>Inhouse framework</div>
-            </div>
-           <!--  <button class="btn_one"><a href="https://voyado.com/" target="_blank">Website</a></button> -->
-<!--             <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button> -->
-        </section>
-        <section>
-            <h2>FRONTEND DEVELOPER INTERN | OSYNLIG <br />
-                (oct 2020 - apr 2021)</h2>
-<!--             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p> -->
-            <div id="used">
-                <div>Figma</div>
-                <div>Gatsby.js</div>
-                <div>Next.js</div>
-                <div>React</div>
-                <div>Wordpress</div>
-                <div>HTML5</div>
-                <div>CSS</div>
-                <div>TypeScript</div>
-                <div>JavaScript</div>
-            </div>
-           <!--  <button class="btn_one"><a href="https://osynlig.se/" target="_blank">Website</a></button> -->
-<!--             <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button> -->
-        </section>
-        <section>
-            <h1>take a look</h1>
-            
-            <h2>GRÖNA LUND | ONLINE ORDERS IN PEJ </h2>
-               <p> Built and designed the UX/UI for Gröna Lunds online restaurant orders in Pej. </p>
-               <div id="used">
-                <div>HTML</div>
-                <div>CSS/SASS</div>
-                <div>Figma</div>
-                <div>Pej</div>
-            </div>
-            <img src="/pejfull.png" alt="" class="proj_img">
-            <div class="img_container">
-                
-                 <img src="/pej_3.png" alt="" class="proj_img_small">
-        <!--        <img src="/pej3.jpg" alt="" class="proj_img_small">
-                 <img src="/pej2.jpg" alt="" class="proj_img_small">
-                 <img src="/pej3.jpg" alt="" class="proj_img_small"> -->
-            </div>
-            <!--  -->
-             <div class="spacer"></div>
-          <!--  <h2>GÖTHES INDUSTRIBESLAG | RE-DESIGN </h2>
-            <p> Re-design for Göthes Industribeslag (project during internship at Osynlig AB)
-            </p>
-            <div id="used">
-             <div>Figma</div>
-             <div>HTML</div>
-             <div>CSS/SASS</div>
-             <div>Svelte.js</div>
-            </div>-->
-           <!-- <img src="/gothes.png" alt="" class="proj_img">-->
-         <!--   <div class="img_container">
-                
-                <img src="/gothes2.png" alt="" class="proj_img_small">
-                <img src="/gothes3.png" alt="" class="proj_img_small">
-           
-            </div> -->
-         
-             <!--  -->
-<!--              <div class="spacer"></div>
-             <h2>SOMETHING | SOMETHING </h2>
-             <p> Lorem Ipsum.
-             </p>
-             <div id="used">
-              <div>HTML</div>
-              <div>CSS/SASS</div>
-              <div>FIGMA</div>
-              <div>Pej</div>
-             </div>
-              <img src="/pejfull.png" alt="" class="proj_img">
-              <div class="img_container">
-                  
-                  <img src="/pej2.jpg" alt="" class="proj_img_small">
-                  <img src="/pej3.jpg" alt="" class="proj_img_small">
-                   <img src="/pej2.jpg" alt="" class="proj_img_small">
-                   
-              </div>
-         </div> -->
-        </section>
-    </div>
-    <div id="about_container" class="container">
-            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-            <h1>about</h1>
-            <section class="aboutme">
-                <h2>ABOUT ME</h2>
-                <h2>Hi! I'm Patrik Axenstedt, a Frontend Developer and UX-designer. 
-                    Self-motivated and a competitive spirit with a intrerest for design.
-                    I have graduated with a diploma in Fullstack Development and Graphic Design and Communication which is favorable when creating stunning and user-friendly UX.</h2>
-            </section>
-            <section>
-                <h2>SKILLS/TECH</h2>
-                <div id="used">
-                    <div>Figma</div>
-                    <div>Storybook</div>
-                    <div>Photoshop</div>
-                    <div>InDesign</div>
-                    <div>Illustrator</div>
-                    <div>HTML</div>
-                    <div>CSS/SASS</div>
-                    <div>JavaScript</div>
-                    <div>TypeScript</div>
-                    <div>React.js</div>
-                    <div>Gatsby.js</div>
-                   </div>
-            </section>
-            <section>
-                <h2>EDUCATION</h2>
-                <h2>Fullstack web developer | Chas Academy (2019-2021)</h2>
-                <h2>Graphic Design and Communication | Idévärlden (2010-2012)</h2>
-            </section>
-<!--            <section>
-                <h2>skills</h2>
-                <p>
-                    .
-                </p>
-            </section>  -->
         </div>
-        <!--   <div id="contact_container" class="container">
-            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-            <h1>contact.</h1>
-            <section>
-                <h2>contact me</h2>
-                <p>
-                    empty for now
-                </p>
-            </section>
-        </div> -->
-<!--        <div id="footer">
-            <a>empty for now</a>
-        </div>  -->
-    <script src="index.js" type="text/javascript"></script>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <a href="project1.html" class="project-card">
+                    <img src="./projects/pej.png" alt="Project 1" class="project-image">
+                    <div class="project-overlay">
+                        <h3>GRÖNA LUND</h3>
+                        <p>UX Design • UI Design • Research</p>
+                    </div>
+                </a>
+                <a href="project2.html" class="project-card">
+                  <img src="./projects/figma_portfolio_thumb.png" alt="Project 2" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Sustainability Developer Portfolio</h3>
+                        <p>UX Design • UI Design</p>
+                    </div>
+                </a>
+                <a href="project3.html" class="project-card">
+                  <img src="./projects/placeholder.png" alt="Project 3" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Project 3</h3>
+                        <p>UX Design • UI Design • Research</p>
+                    </div>
+                </a>
+                <a href="project4.html" class="project-card">
+                  <img src="./projects/placeholder.png" alt="Project 4" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Project 4</h3>
+                        <p>UX Design • UI Design • Research</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="skills">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="skills-grid">
+                    <div class="exp-card"><b>UX-DESIGNER/TEMPLATE DEVELOPER | VOYADO</b>
+                        (nov 2024 - current)</div>
+                    <div class="exp-card"><b>FRONTEND DEVELOPER | VOYADO</b>
+                        (aug 2022 - mars 2024)</div>
+                    <div class="exp-card"><b>FRONTEND DEVELOEPR/UX-DESIGNER | PARKS & RESORTS SCANDINAVIA AB</b>
+                        (feb 2022 - may 2022)</div>
+                    <div class="exp-card"><b>UX-DESIGNER/TEMPLATE DEVELOPER | VOYADO</b>
+                        (aug 2021 - feb 2022)</div>
+                    <div class="exp-card"><b>FRONTEND DEVELOPER INTERN | OSYNLIG</b>
+                        (oct 2020 - apr 2021)</div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Figma</div>
+                <div class="skill-card">User Research</div>
+                <div class="skill-card">Wireframing</div>
+                <div class="skill-card">Prototyping</div>
+                <div class="skill-card">UI Design</div>
+                <div class="skill-card">User Testing</div>
+                <div class="skill-card">Design Systems</div>
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in touch?</h2>
+            <div class="contact-content">
+             <!--    <p>Feel free to reach out!</p> -->
+                <a href="mailto:patrik.axenstedt@gmail.com" class="button">Email me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>©Patrik Axenstedt 2025 <a href="tel:+46732629174" class="phone">+46 73 26 29 174</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="main.js"></script>
 </body>
 </html>
