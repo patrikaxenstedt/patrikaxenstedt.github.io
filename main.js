@@ -22,4 +22,12 @@ const observer = new IntersectionObserver((entries) => {
     threshold: 0.1
 });
 
+const toggle = document.getElementById('nav-toggle');
+const links = document.getElementById('nav-links');
+
+toggle.addEventListener('click', () => {
+    links.classList.toggle('active');
+});
+
+
 document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
