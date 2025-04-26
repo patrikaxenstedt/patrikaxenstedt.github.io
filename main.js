@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scroll functionality
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
+                e.preventDefault();
                 target.scrollIntoView({
                     behavior: 'smooth'
                 });
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Reveal animations on scroll
+    // Reveal animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -23,9 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.1
     });
 
-    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    // Observer only if fade-ins exist
+    const fadeIns = document.querySelectorAll('.fade-in');
+    if (fadeIns.length > 0) {
+        fadeIns.forEach((el) => observer.observe(el));
+    }
 
-    // Hamburger menu toggle
+    // Hamburger toggle (only if exists)
     const toggle = document.getElementById('nav-toggle');
     const links = document.getElementById('nav-links');
 
